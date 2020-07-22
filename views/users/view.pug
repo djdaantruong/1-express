@@ -1,0 +1,9 @@
+extends ../layouts/common
+block nav
+  include ../layouts/nav
+block content
+  a(href="/users" style='text-decoration: none;') Back
+  h3.py-3 View user
+  p
+   b.col-sm-2.col-form-label Name
+   span= user.name
