@@ -4,24 +4,30 @@
       "name": "Daan Di",
       "id": "Po4hB0W9e",
       "email": "info@didaantruong",
-      "password": "123456"
-    },
-    {
-      "name": "Thinh Pham",
-      "id": "EAMdxBMZz"
-    },
-    {
-      "name": "Hong Quang",
-      "id": "SnbDYMjCn"
-    },
-    {
-      "name": "Minh Thong",
-      "id": "Xo4h0DUK-"
+      "password": "e10adc3949ba59abbe56e057f20f883e",
+      "isAdmin": true
     },
     {
       "name": "Quy Tan",
       "phone": "0123123123",
       "id": "T663pf8Q_"
+    },
+    {
+      "name": "Thinh Pham",
+      "phone": "01010101",
+      "id": "I_X3dGGBF"
+    },
+    {
+      "name": "Quang",
+      "phone": "02020202",
+      "id": "XNRRDtRSI",
+      "email": "info@quang",
+      "password": "e10adc3949ba59abbe56e057f20f883e"
+    },
+    {
+      "name": "Minh Thong",
+      "phone": "03030303",
+      "id": "ufawnyzUh"
     }
   ]
 }
