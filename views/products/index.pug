@@ -1,0 +1,37 @@
+extends ../layouts/common
+block nav
+  include ../layouts/nav
+block content
+    a(href="/products/create") New product
+
+    form(action="/products/search", method="GET", class="d-flex")
+        input(type="text", name="q", class="form-control mr-sm-2" placeholder="Search")
+        button.btn.btn-primary Search
+    h1 Products
+    .container
+      .pt-5.d-flex.flex-wrap
+        each product in products
+          .col-6.col-lg-3.my-2
+            .card
+              img.card-img-top(src='https://loremflickr.com/320/240')
+              .card-body
+                h5.card-title=product.name
+                p.card-text=product.description
+                a.btn.btn-primary(href='/' + product.id) Go to cart
+    .container
+      nav(aria-label='Page navigation').d-flex.justify-content-center
+        ul.pagination
+          - var page = 1;
+            li.page-item
+              a.page-link(href='/products/?page='+ parseInt(page - 1)) Previous
+            li.page-item
+              a.page-link(href='/products/?page='+ parseInt(page)) #{page}
+            li.page-item
+              a.page-link(href='/products/?page='+ parseInt(page + 1)) #{page + 1}
+            li.page-item
+              a.page-link(href='/products/?page='+ parseInt(page + 2)) #{page + 2}
+            li.page-item
+              a.page-link(href='/products/?page='+ parseInt(page + 1)) Next
+
+    
+
