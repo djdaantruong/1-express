@@ -649,5 +649,14 @@
       "image": "https://loremflickr.com/320/240",
       "description": "lacinia erat vestibulum sed magna at nunc commodo placerat praesent blandit nam nulla integer pede justo lacinia eget tincidunt eget"
     }
+  ],
+  "sessions": [
+    {
+      "id": "HimhrLXXt",
+      "cart": {
+        "ec735ce6-81e1-49fa-9b67-e60cc53e9012": 2,
+        "596e6ff8-a971-43d3-b89f-20aa755d04af": 1
+      }
+    }
   ]
 }
