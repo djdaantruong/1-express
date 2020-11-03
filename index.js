@@ -34,7 +34,7 @@ app.get('/', function(req, res){
 	});
 });
 
-app.use('/users', authMiddleware.requireAuth, userRoute);
+app.use('/users', userRoute);
 app.use('/auth', authRoute);
 app.use('/products', productRoute);
 app.use('/cart', cartRoute);

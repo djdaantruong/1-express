@@ -8,12 +8,15 @@ block content
     .alert.alert-danger= error
 
   form(action="/auth/login", method="POST")
+
    .form-group.row
     label(for='email').col-sm-2.col-form-label Email
     .col-sm-10
-     input#email.form-control(name="email", type="text", value=values ? values.email : "")
+    input#email.form-control(name="email", type="text", value=values ? values.email : "")
+
    .form-group.row
     label(for='password').col-sm-2.col-form-label Password
     .col-sm-10
-     input#password.form-control(name="password", type="password", value=values ? values.password : "")
+    input#password.form-control(name="password", type="password", value=values ? values.password : "")
+    input(type="hidden", name="_csrf", value=csrfToken)
    button.btn.btn-primary Login
