@@ -16,5 +16,7 @@ module.exports.index = function(req, res){
         // products: db.get('products').value().slice(start, end)
         //Cach 2: dung cac method trong database lodash, doc va thuc hanh cho viec hoc cung nhu di lam
         products: db.get('products').drop(drop).take(perPage).value()
-	});
+    });
+    res.locals.page = page;
+    res.locals.drop = drop;
 };
